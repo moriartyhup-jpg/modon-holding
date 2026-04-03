@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you | Beach Plaza</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        :root {
+            --void:    #080C0F;
+            --abyss:   #0D1117;
+            --amber:   #E8A838;
+            --white:   #FFFFFF;
+            --silver:  #A0A0A0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--void);
+            color: var(--white);
+            font-family: 'DM Sans', sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        
+        .fade-in {
+            animation: fadeInPage 1.2s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInPage {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 600px;
+        }
+
+        
+        .success-icon {
+            font-size: 80px;
+            color: var(--amber);
+            margin-bottom: 30px;
+            display: inline-block;
+            animation: scaleIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s both;
+        }
+
+        @keyframes scaleIn {
+            from { transform: scale(0); }
+            to { transform: scale(1); }
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 400;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        h1 em {
+            font-style: italic;
+            color: var(--amber);
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--silver);
+            line-height: 1.8;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        
+        .back-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: transparent;
+            border: 1px solid var(--amber);
+            color: var(--white);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 13px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .back-btn:hover {
+            background: var(--amber);
+            color: var(--void);
+            box-shadow: 0 0 20px rgba(232, 168, 56, 0.3);
+        }
+
+        
+        .bg-glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(232, 168, 56, 0.05) 0%, transparent 70%);
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <div class="container fade-in">
+        <div class="success-icon">
+            <i class="fa-regular fa-circle-check"></i>
+        </div>
+        
+        <h1>Thank you<br><em>We have received your request</em></h1>
+        
+        <p>
+Our sales team at Beach Plaza will review your information and contact you as soon as possible to discuss all the details</p>
+        
+        <a href="index (2) (1).html" class="back-btn">Back to main page</a>
+    </div>
+
+  
+</body>
+</html>
